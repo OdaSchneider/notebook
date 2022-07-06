@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Notitzblock</title>
+    <link rel="icon" type="image/x-icon" href="img/note.ico">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="fonts.css">
+    <script src='script.js'></script>
+</head>
+
+
+
+<body onload="render()">
+    <div class="head">
+        <div class="headLeftSide">
+            <a href="index.html"><img src="img/attach.ico" class="icon"></a>
+            <a href="index.html"><h1>Notizen</h1></a>
+        </div>
+        <input id="filter" type="text" placeholder="Suche" onkeyup="filter()">
+    </div>
+
+    <div class="notes">
+
+        <div id="sideBar" class="sideBar">
+            <a href="index.html"><img src="img/note.ico"><b>Notizen</b></a><br>
+            <br>
+            <a href="trash.html"><img src="img/trash.ico"><b>Papierkorb</b></a>
+        </div>
+
+        <div id="mainPage" class="mainPage">
+            <div id="input" class="inputStyle"></div>
+            <div id="pinNote" class="pinNote"  onclick="closeTitle()"></div>
+            <div id="startNote" class="startNote d-none"  onclick="closeTitle()">
+                <img src="img/note.ico">
+                <p>Keine gespeicherten Notizen</p>
+            </div>
+        </div>
+
+        <div id="dialog" class="dialog-bg inputStyle d-none"></div>
+
+    </div>
+
+</body>
+
+</html>

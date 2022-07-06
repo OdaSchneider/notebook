@@ -1,0 +1,386 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+}
+
+.d-none {
+    display: none !important;
+}
+
+
+
+/* -------HeaderStyle------- */
+
+
+
+.head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px 0 16px;
+    border-bottom: 1px solid lightgray;
+    z-index: 999;
+    background-color: white;
+}
+
+.headLeftSide {
+    display: flex;
+    align-items: center;
+}
+
+.headButton {
+    cursor: pointer;
+    height: fit-content;
+    border: unset;
+    background-color: unset;
+}
+
+.head img {
+    width: 30px;
+    height: 30px;
+}
+
+.head a {
+    text-decoration: none;
+}
+
+h1 {
+    margin-left: 50px;
+    color: rgb(95, 95, 95);
+}
+
+#filter {
+    width: 300px;
+    height: 30px;
+}
+
+
+
+/* --------BodyStyle ----------*/
+
+
+
+textarea {
+    padding: none;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgb(0, 0, 0, 30%);
+}
+
+input {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgb(0, 0, 0, 30%);
+}
+
+.sideBar {
+    height: 100%;
+    width: 45px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 100px 0 0 8px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color: white;
+    box-shadow: 0px 2px 5px 0px rgb(0, 0, 0, 30%)
+}
+
+.sideBar:hover{
+    width: 250px;
+}
+
+.sideBar a {
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.sideBar a:hover {
+    background-color: #FEEFC3;
+    border-radius: 10px;
+}
+
+.sideBar img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.mainPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.notes {
+    padding: 50px 16px 0 16px;
+    display: flex;
+}
+
+#note {
+    width: 300px;
+    height: 100px;
+    margin: 16px 0 0 0;
+    padding: 8px;
+}
+
+.inputStyle {
+    padding: 0 0 64px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputTitle {
+    width: 300px;
+    height: 30px;
+    padding: 8px;
+}
+
+.flex {
+    width: 300px;
+    margin: 16px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+}
+
+.closeButton {
+    width: 80px;
+    height: 30px;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 5px;
+    background-color: rgb(235, 235, 235);
+    cursor: pointer;
+    color: rgb(126, 125, 125);
+}
+
+.pinNote {
+    padding: 32px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.startNote {
+    display: flex;
+    align-items: center;
+}
+
+.startNote img {
+    opacity: 0.5;
+    margin: 8px;
+}
+
+.startNote p {
+    color: rgb(150, 148, 148);
+    margin: 8px;
+}
+
+.output {
+    height: fit-content;
+    width: 150px;
+    padding: 16px;
+    margin: 16px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    color: rgb(95, 95, 95);
+    overflow-wrap: break-word;
+}
+
+.action {
+    display: flex;
+    justify-content: end;
+}
+
+.trashNote {
+    padding: 32px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* --------Dialog---------- */
+
+.dialog-bg {
+    background-color: rgba(1, 40, 58, 0.7);
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog {
+    height: 50vh;
+    width: 50vw;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+#editTitle {
+    margin: 32px;
+    padding: 8px;
+}
+
+#editNote {
+    padding: 8px;
+    width: 300px;
+    min-height: 100px;
+    margin-bottom: 16px;
+}
+
+.alert {
+    margin: 24px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    padding-top: 72px;
+}
+
+
+@media (max-width: 750px) {
+    #filter {
+        width: 200px;
+    }
+}
+
+@media (max-width: 650px) {
+    .inputTitle {
+        width: 200px;
+    }
+
+    #note {
+        width: 200px;
+    }
+
+    .flex {
+        width: 200px;
+    }
+
+    #editNote{
+        width: 200px;
+    }
+
+}
+
+@media(max-width: 500px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    .head img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #filter {
+        width: 150px;
+    }
+}
+
+@media(max-width: 400px) {
+    #filter {
+        width: 200px;
+    }
+
+    .head{
+        flex-direction: column;
+        padding-bottom: 16px;
+    }
+
+    .alert{
+        width: 200px;
+    }
+
+    .mainPage{
+        margin-left: 30px;
+    }
+
+    .sideBar:hover{
+        width: 45px;
+    }
+
+    .sideBar{
+        padding-top: 150px;
+    }
+}
+
+@media(max-width: 350px) {
+    .inputTitle {
+        width: 100px;
+    }
+
+    #note {
+        width: 100px;
+    }
+
+    #editNote{
+        width: 100px;
+        height: 200px;
+    }
+
+    .flex {
+        width: 100px;
+    }
+
+    .icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    .closeButton {
+        width: 60px;
+        height: 30px;
+        font-size: 0.8em;
+    }
+
+    .newNote {
+        width: 100px;
+    }
+
+    .startNote{
+        flex-direction: column;
+    }
+
+    .mainPage{
+        margin-left: 30px;
+    }
+
+}
